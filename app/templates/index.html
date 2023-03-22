@@ -150,33 +150,7 @@
                     </p>
                 </div>
 
-                 <!-- Income Level-->
-              
-                 <div class="container-sm align-items-center my-5">
-                    <div class="charts text-center">
-                        <h1>Income Level</h1>
-                        <div class="row"><div id="income"></div></div><hr>
-                        <!-- Placeholder for the tooltip -->
-                        <div id="vis-tooltip" class="vg-tooltip"></div>
-                    </div>
-
-                  <!-- Render Charts -->
-                    <script type="text/javascript">
-                        function parse(url, div) {
-                        var opt = {
-                            mode: "vega-lite",
-                            renderer: "svg",
-                            actions: {export: true, source: false, editor: false}
-                        };
-                
-                        vegaEmbed("#"+div, url, opt, function(error, result) {
-                            // result.view is the Vega View, url is the original Vega-Lite specification
-                            vegaTooltip.vegaLite(result.view, url);
-                        });
-                        }
-                        parse("/data/income","income");
-                    </script>
-                </div>
+    
 
                 <div class="container-sm align-items-center offset-1 my-5">
                 <div class='tableauPlaceholder' id='viz1678988125464' style='position: relative'>
